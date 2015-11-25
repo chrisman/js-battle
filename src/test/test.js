@@ -105,8 +105,7 @@ describe('Character', function(){
 })
 
 describe('arena', function(){
-  it('should take two characters as arguments', function(){
-    arena(mycharacter, othercharacter)
-    // expect(arena(mycharacter, mycharacter)).arguments.to.have.length(2)
-  })
+  it('should take two characters as arguments')
 })
+
+arena(mycharacter, othercharacter)
