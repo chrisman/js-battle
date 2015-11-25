@@ -18,17 +18,15 @@ var defaultObj = {
   }
 }
 module.exports = {
-  // console.log(defaultObj);
   Character: function(obj){
-    // console.log(obj);
-    this.name = obj.name || defaultObj.name
-    this.attack = obj.attack || defaultObj.attack
-    // console.log(typeof this.attack);
-    this.defense = obj.defense || defaultObj.defense
-    this.health = obj.health || defaultObj.health
-    this.attacks = obj.attacks || defaultObj.attacks
-    this.alignment = obj.alignment || defaultObj.alignment
-    this.phrases = obj.phrases || defaultObj.phrases
+    obj = (obj === undefined) ? defaultObj : obj
+    this.name = obj.name
+    this.attack = obj.attack
+    this.defense = obj.defense
+    this.health = obj.health
+    this.attacks = obj.attacks
+    this.alignment = obj.alignment
+    this.phrases = obj.phrases 
     return this
   }
 }

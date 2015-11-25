@@ -1,4 +1,5 @@
 var character = require('../js/character')
+var arena = require('../js/arena')
 var expect = require('chai').expect
 
 describe('Character', function(){
@@ -66,5 +67,11 @@ describe('Character', function(){
   })
   it('should populate default values', function(){
     var othercharacter = new character.Character()
+  })
+})
+
+describe('arena', function(){
+  it('should take two characters as arguments', function(){
+    expect(arena).arguments.to.have.length(2)
   })
 })
