@@ -107,5 +107,3 @@ describe('Character', function(){
 describe('arena', function(){
   it('should take two characters as arguments')
 })
-
-arena(mycharacter, othercharacter)
